@@ -1,0 +1,18 @@
+2026-07-16 16:14:58,682 INFO args: Namespace(setting='all', reps=50, n=5, L_val=1000, p=0.5, dim=3, h=0.25, lambda_val=1e-05, w_iter=200, pp=400, alpha=0.1, grid_num=125, grid_lo=0.3, grid_hi=0.7, scale=0.1, amp=2.0, seed=42, cpu=8, out='final_candidate')
+baselines/run_baseline_comparison.py:145: RuntimeWarning: Mean of empty slice
+  det = np.nanmean(vals["rev_detect"])
+2026-07-16 16:15:59,317 INFO saved setting1_n5_L1000_p0.5_h0.25_grid125_reps50_seed42
+method                               MSE  coverage  rank acc  rev detect  rev false
+Linear contextual BTL             0.0041      0.84     0.680         nan      0.002
+Polynomial contextual BTL         0.0090      0.80     0.647         nan      0.000
+Proposed (nonparametric)          0.0279      0.92     0.572         nan      0.010
+2026-07-16 16:16:58,902 INFO saved setting2_n5_L1000_p0.5_h0.25_grid125_reps50_seed42
+method                               MSE  coverage  rank acc  rev detect  rev false
+Linear contextual BTL             0.0341      0.70     0.984         nan      0.000
+Polynomial contextual BTL         0.0385      0.80     0.981         nan      0.000
+Proposed (nonparametric)          0.0736      0.76     0.961         nan      0.000
+2026-07-16 16:18:00,411 INFO saved setting3_n5_L1000_p0.5_h0.25_grid125_reps50_seed42
+method                               MSE  coverage  rank acc  rev detect  rev false
+Linear contextual BTL             0.2522      0.08     0.875       0.087      0.000
+Polynomial contextual BTL         0.2520      0.08     0.876       0.027      0.000
+Proposed (nonparametric)          0.1097      0.46     0.930       0.447      0.006
